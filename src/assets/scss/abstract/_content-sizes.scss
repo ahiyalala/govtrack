@@ -1,0 +1,15 @@
+.region-content{
+    @include column-content;
+}
+
+.region-text{
+    @include column-text;
+}
+
+.region-wide{
+    @include column-wide;
+}
+
+.region-fullbleed{
+    @include column-fullbleed;
+}

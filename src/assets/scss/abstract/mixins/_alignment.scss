@@ -1,0 +1,9 @@
+@mixin marginalize($space, $child) {
+  margin-left: -$space;
+  margin-right: -$space;
+
+  .#{$child} {
+    margin-left: $space;
+    margin-right: $space;
+  }
+}

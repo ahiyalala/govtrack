@@ -1,0 +1,27 @@
+.landing-banner {
+  margin-top: 5rem;
+  height: 18rem;
+  display: flex;
+  justify-content: end;
+}
+
+.landing-banner--blue {
+  background: $secondary;
+
+  h1,
+  small {
+    color: $white;
+  }
+}
+
+.landing-banner__text {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+}
+
+.landing-banner__text * {
+  color: $black;
+  text-transform: uppercase;
+}

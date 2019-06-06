@@ -1,0 +1,83 @@
+$w490: 30.625rem;
+$w800: 50rem;
+$w672: 42rem;
+$w1024: 64rem;
+$w1440: 90rem;
+
+@mixin column-content {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @include breakpoint(medium) {
+      max-width: #{3 + 3 + $w800};
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  
+    @include breakpoint(large) {
+      max-width: #{2 + 2 + $w800};
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @mixin column-text {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @include breakpoint(medium) {
+      max-width: #{4 + 4 + $w672};
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  
+    @include breakpoint(large) {
+      max-width: #{2 + 2 + $w672};
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @mixin column-wide {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @include breakpoint(medium) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  
+    @include breakpoint(large) {
+      max-width: #{2 + 2 + $w1024};
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  @mixin column-fullbleed {
+    width: 100%;
+  }
+  
+  @mixin column-narrow {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+    @include breakpoint(medium) {
+      max-width: #{4 + 4 + $w490};
+      padding-left: 4rem;
+      padding-right: 4rem;
+      margin-bottom: 3rem;
+    }
+  }

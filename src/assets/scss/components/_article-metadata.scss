@@ -1,0 +1,70 @@
+.profile-metadata,
+.article-metadata {
+  margin-top: 1.5rem;
+}
+
+.profile-metadata dt,
+.article-metadata dt {
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.profile-metadata dd,
+.article-metadata dd {
+  margin-left: 0.75rem;
+}
+
+.article-metadata__votes {
+  margin-left: 0;
+}
+
+.profile-metadata__title {
+  display: block;
+}
+
+@include breakpoint(medium) {
+  .article-metadata__votes {
+    position: relative;
+    margin-left: -1rem;
+  }
+
+  .article-metadata__votes-item {
+    display: inline-block;
+    margin: 0 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .article-metadata__votes-item--is-toggled {
+    .voters-list {
+      display: block;
+    }
+  }
+
+  .voters-list {
+    position: absolute;
+    display: none;
+  }
+}
+
+.article-metadata__votes,
+.voters-list {
+  list-style-type: none;
+}
+
+.voters-list__item {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-left: -0.75rem;
+
+  &--is-excess {
+    background: $secondary;
+    text-align: center;
+    strong {
+      line-height: 3;
+      color: $white;
+    }
+  }
+}

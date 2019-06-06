@@ -1,0 +1,33 @@
+.senators__list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.senators__list li {
+  margin-bottom: 1.5rem;
+}
+
+.senators__profile .profile-icon,
+.senators__name {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.senators__profile .profile-icon {
+  margin-bottom: 1rem;
+}
+
+.senators__list a:hover {
+  .senators__name {
+    text-decoration: underline;
+  }
+}
+
+.senators__name {
+  color: $black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

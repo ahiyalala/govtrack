@@ -1,0 +1,66 @@
+.related-links,
+.focus-list,
+.authored-list {
+  list-style-type: none;
+}
+
+.authored-list a {
+  color: $black;
+  text-decoration: underline;
+  font-size: 1.25rem;
+}
+
+.focus-list {
+  margin-top: 1rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.focus-list li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.related-links__title {
+  margin-right: 0.5rem;
+}
+
+.focus-list__item {
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid $black;
+  width: 8rem;
+  height: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.focus-list__item:hover {
+  background: $black;
+
+  .focus-list__detail > .fa,
+  .focus-list__detail > .focus-list__text {
+    color: $white;
+  }
+}
+
+.focus-list__detail {
+  text-align: center;
+}
+
+.focus-list__detail > .fa,
+.focus-list__detail > .focus-list__text {
+  display: block;
+  color: $black;
+}
+
+.focus-list__detail > .fa {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.focus-list__detail > .focus-list__text {
+  font-size: 0.75rem;
+}
