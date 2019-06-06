@@ -1,4 +1,15 @@
 .main-footer {
   padding: 1rem 0;
   background: $footer-gray;
+  margin-top:4rem;
 }
+.footer-links{
+  display:flex;
+  @include marginalize(0.5rem, 'footer-links__item')
+}
+
+.footer-links__item{
+  display:inline-block;
+}
+
+

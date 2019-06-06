@@ -1,9 +1,11 @@
 @charset 'utf-8';
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
-
+@import "font-import";
+@import "settings";
+@import "foundation";
+@import "motion-ui";
+@import "fontawsome/fontawesome.scss";
+@import "fontawsome/solid.scss";
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
@@ -62,3 +64,14 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import "abstract/all";
+@import "components/article";
+@import "components/article-metadata";
+@import "components/profile";
+@import "components/lists";
+@import "components/tags";
+@import "components/navigation";
+@import "components/footer";
+@import "components/landing-header";
+@import "components/senators-list";
