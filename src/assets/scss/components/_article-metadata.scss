@@ -34,6 +34,12 @@
     margin-bottom: 4rem;
   }
 
+  .article-metadata__votes-item img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+
   .article-metadata__votes-item--is-toggled {
     .voters-list {
       display: block;
@@ -43,6 +49,7 @@
   .voters-list {
     position: absolute;
     display: none;
+    margin-top:0.5rem;
   }
 }
 

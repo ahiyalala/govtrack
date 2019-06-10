@@ -20,10 +20,13 @@
 }
 
 .profile-banner {
-  margin-top: 6rem;
-  height: 20rem;
+  margin-top: 5rem;
+  min-height: 20rem;
   display: flex;
   justify-content: end;
+  background: $secondary;
+  padding-top:3rem;
+  padding-bottom:2rem;
 }
 
 .profile-banner__text {
@@ -38,7 +41,7 @@
 }
 
 .profile-banner__text * {
-  color: $black;
+  color: $white;
   text-transform: uppercase;
 }
 

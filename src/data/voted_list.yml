@@ -1,0 +1,12 @@
+in_favor:
+  - 'Bill X'
+  - 'Bill B'
+  - 'Bill C'
+against:
+  - 'Bill D'
+  - 'Bill E'
+  - 'Bill F'
+abstain:
+  - 'Bill G'
+  - 'Bill H'
+  - 'Bill I'

@@ -1,0 +1,9 @@
+in_favor:
+  - name: 'Joel Villanueva'
+    image: 'https://assets.rappler.com/132A3A36172B4B2EBABA0F63448F4E09/img/D7F881EEC34C43D9AF120A6355E75B16/20160509-Joel_Villanueva_D7F881EEC34C43D9AF120A6355E75B16.jpg'
+  - name: 'Nancy Binay'
+    image: 'https://scontent.fmnl6-1.fna.fbcdn.net/v/t1.0-9/28379112_2150676958481249_60740891177535679_n.jpg?_nc_cat=105&_nc_oc=AQnA8rDzYyDsNMkyQuW0VWLCzhPq_Gb2Q0N2hUBOuIcBu8DpnGqm9FEtQ5vB-oLdHOk&_nc_ht=scontent.fmnl6-1.fna&oh=701dbcee73247cc1df8ef6e05e15e3e6&oe=5D7C5313'
+  - name: 'Risa Hontiveros'
+    image: 'https://politics.com.ph/wp-content/uploads/2015/06/politiko_pic1753.jpg'
+against: []
+abstained: []

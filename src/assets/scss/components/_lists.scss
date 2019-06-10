@@ -28,7 +28,7 @@
 .focus-list__item {
   display: inline-block;
   border-radius: 100%;
-  border: 1px solid $black;
+  border: 10px solid $process-yellow;
   width: 8rem;
   height: 8rem;
 
@@ -38,7 +38,7 @@
 }
 
 .focus-list__item:hover {
-  background: $black;
+  background: $process-yellow;
 
   .focus-list__detail > .fa,
   .focus-list__detail > .focus-list__text {
@@ -53,7 +53,7 @@
 .focus-list__detail > .fa,
 .focus-list__detail > .focus-list__text {
   display: block;
-  color: $black;
+  color: $process-yellow;
 }
 
 .focus-list__detail > .fa {
@@ -63,4 +63,33 @@
 
 .focus-list__detail > .focus-list__text {
   font-size: 0.75rem;
+}
+
+
+.vote-list{
+  list-style-type: none;
+  margin:0 1rem;
+}
+
+.vote-list__item{
+  margin-top:1rem;
+}
+
+.vote-list__link{
+  color:$black;
+  text-decoration: underline;
+  &:hover{
+    color:$black;
+    text-decoration: none;
+  }
+}
+
+.voted-list__item{
+  margin-top:0.5rem;
+}
+
+.voted-list{
+  list-style-type: none;
+  margin-top:0.5rem;
+  margin-left:0;
 }

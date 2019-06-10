@@ -50,38 +50,15 @@
                   In Favor (17)
                 </a>
                 <ul class="voters-list">
-                  <li class="voters-list__item">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Sonny Angara"
-                    />
-                  </li>
-                  <li class="voters-list__item">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Bam Aquino"
-                    />
-                  </li>
-                  <li class="voters-list__item">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Nancy Binay"
-                    />
-                  </li>
-                  <li class="voters-list__item">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Franklin Drilon"
-                    />
-                  </li>
-                  <li class="voters-list__item">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="JV Ejercito"
-                    />
-                  </li>
+                  {{#each voters_list.in_favor}}
+                    <li class="voters-list__item">
+                      <a href="#">
+                        <img src="{{ this.image }}" title="{{this.name}}" alt="{{this.name}}" />
+                      </a>
+                    </li>
+                  {{/each}}
                   <li class="voters-list__item voters-list__item--is-excess">
-                    <a href="#"><strong>+12</strong></a>
+                    <a href="#"><strong>+14</strong></a>
                   </li>
                 </ul>
               </li>

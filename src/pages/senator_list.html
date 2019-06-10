@@ -15,6 +15,7 @@
   <main>
     <div class="senators__container region-content">
       <ul class="senators__list grid-x">
+        {{#each senators}}
         <li class="small-12 medium-6 large-3">
           <a href="#">
             <div class="senators__profile text-center">
@@ -24,75 +25,11 @@
                   alt="Sonny Angara"
                 />
               </div>
-              <span class="senators__name">Bong Revilla</span>
+              <span class="senators__name">{{this}}</span>
             </div>
           </a>
         </li>
-        <li class="small-12 medium-6 large-3">
-          <a href="#">
-            <div class="senators__profile text-center">
-              <div class="profile-icon profile-icon--large">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Sonny Angara"
-                />
-              </div>
-              <span class="senators__name">Bong Revilla</span>
-            </div>
-          </a>
-        </li>
-        <li class="small-12 medium-6 large-3">
-          <a href="#">
-            <div class="senators__profile text-center">
-              <div class="profile-icon profile-icon--large">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Sonny Angara"
-                />
-              </div>
-              <span class="senators__name">Bong Revilla</span>
-            </div>
-          </a>
-        </li>
-        <li class="small-12 medium-6 large-3">
-          <a href="#">
-            <div class="senators__profile text-center">
-              <div class="profile-icon profile-icon--large">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Sonny Angara"
-                />
-              </div>
-              <span class="senators__name">Bong Revilla</span>
-            </div>
-          </a>
-        </li>
-        <li class="small-12 medium-6 large-3">
-          <a href="#">
-            <div class="senators__profile text-center">
-              <div class="profile-icon profile-icon--large">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Sonny Angara"
-                />
-              </div>
-              <span class="senators__name">Bong Revilla</span>
-            </div>
-          </a>
-        </li>
-        <li class="small-12 medium-6 large-3">
-          <a href="#">
-            <div class="senators__profile text-center">
-              <div class="profile-icon profile-icon--large">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Sonny Angara"
-                />
-              </div>
-              <span class="senators__name">Bong Revilla</span>
-            </div>
-          </a>
-        </li>
+        {{/each}}
       </ul>
     </div>
   </main>

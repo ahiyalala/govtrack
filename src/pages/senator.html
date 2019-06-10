@@ -9,14 +9,18 @@
           <h1>
             Joel Villanueva
           </h1>
+          <p>
+            <i>
+              Labor, Employment and Human Resources Development
+            </i>
+          </p>
         </div>
       </div>
     </div>
-
-    <hr class="region-content" />
   </header>
   <main class="profile-content">
     <article class="region-text">
+        
       <section class="profile-focus">
         <h2 class="h4">Legislative focus</h2>
         <ul class="focus-list">
@@ -39,6 +43,65 @@
         </ul>
       </section>
       <section>
+          <h2 class="h4">Profile</h2>
+          <div class="grid-x">
+            <div class="small-12 medium-6">
+              <dl class="profile-metadata">
+                <dt>Political Party</dt>
+                <dd>CIBAC (Citizen's Battle Against Corruption)</dd>
+                <dt>Public Service</dt>
+                <dd>
+                  <strong class="profile-metadata__title">
+                    Senate of the Philippines
+                  </strong>
+                  Senator | June 2016 - present
+                </dd>
+                <dd>
+                  <strong class="profile-metadata__title">
+                    House of Representatives
+                  </strong>
+                  Member | February 2002 - June 2010
+                </dd>
+                <dd>
+                  <strong class="profile-metadata__title">
+                    TESDA
+                  </strong>
+                  Director General | 2010 - October 2015
+                </dd>
+              </dl>
+            </div>
+            <div class="small-12 medium-6">
+              <dl class="profile-metadata">
+                <dt>Education</dt>
+                <dd><strong>Primary</strong> - Epiphany Elementary School</dd>
+                <dd><strong>Secondary</strong> - Diliman High School</dd>
+                <dd><strong>Tertiary</strong> - University of Santo Tomas</dd>
+                <dt>Political Party</dt>
+                <dd>CIBAC (Citizen's Battle Against Corruption)</dd>
+                <dt>Public Service</dt>
+                <dd>
+                  <strong class="profile-metadata__title">
+                    Senate of the Philippines
+                  </strong>
+                  Senator | June 2016 - present
+                </dd>
+                <dd>
+                  <strong class="profile-metadata__title">
+                    House of Representatives
+                  </strong>
+                  Member | February 2002 - June 2010
+                </dd>
+                <dd>
+                  <strong class="profile-metadata__title">
+                    TESDA
+                  </strong>
+                  Director General | 2010 - October 2015
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </section>
+      <section>
         <h2 class="h4">Authored works</h2>
         <ul class="authored-list">
           <li>
@@ -47,6 +110,42 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section>
+        <h2 class="h4">Vote Track</h2>
+        
+        <ul class="vote-list grid-x">
+            <li class="vote-list__item small-12 medium-6 large-4">
+              <a href="#" class="vote-list__link">
+                  <strong>In favor</strong>
+              </a>
+              <ul class="voted-list">
+                {{#each voted_list.in_favor}}
+                  {{> vote-list__item bill=this}}
+                {{/each}}
+              </ul>
+            </li>
+            <li class="vote-list__item small-12 medium-6 large-4">
+                <a href="#" class="vote-list__link">
+                  <strong>Against</strong>
+                </a>
+                <ul class="voted-list">
+                  {{#each voted_list.against}}
+                    {{> vote-list__item bill=this}}
+                  {{/each}}
+                </ul>
+              </li>
+              <li class="vote-list__item small-12 medium-6 large-4">
+                  <a href="#" class="vote-list__link">
+                    <strong>Abstain</strong>
+                  </a>
+                  <ul class="voted-list">
+                    {{#each voted_list.abstain}}
+                      {{> vote-list__item bill=this}}
+                    {{/each}}
+                  </ul>
+                </li>
+          </ul>
       </section>
       <footer>
         <h2 class="h4">Related news articles</h2>
@@ -64,66 +163,6 @@
         </ul>
       </footer>
     </article>
-
-    <aside class="region-text">
-      <h2 class="h4">Profile</h2>
-      <div class="grid-x">
-        <div class="small-12 medium-6">
-          <dl class="profile-metadata">
-            <dt>Political Party</dt>
-            <dd>CIBAC (Citizen's Battle Against Corruption)</dd>
-            <dt>Public Service</dt>
-            <dd>
-              <strong class="profile-metadata__title">
-                Senate of the Philippines
-              </strong>
-              Senator | June 2016 - present
-            </dd>
-            <dd>
-              <strong class="profile-metadata__title">
-                House of Representatives
-              </strong>
-              Member | February 2002 - June 2010
-            </dd>
-            <dd>
-              <strong class="profile-metadata__title">
-                TESDA
-              </strong>
-              Director General | 2010 - October 2015
-            </dd>
-          </dl>
-        </div>
-        <div class="small-12 medium-6">
-          <dl class="profile-metadata">
-            <dt>Education</dt>
-            <dd><strong>Primary</strong> - Epiphany Elementary School</dd>
-            <dd><strong>Secondary</strong> - Diliman High School</dd>
-            <dd><strong>Tertiary</strong> - University of Santo Tomas</dd>
-            <dt>Political Party</dt>
-            <dd>CIBAC (Citizen's Battle Against Corruption)</dd>
-            <dt>Public Service</dt>
-            <dd>
-              <strong class="profile-metadata__title">
-                Senate of the Philippines
-              </strong>
-              Senator | June 2016 - present
-            </dd>
-            <dd>
-              <strong class="profile-metadata__title">
-                House of Representatives
-              </strong>
-              Member | February 2002 - June 2010
-            </dd>
-            <dd>
-              <strong class="profile-metadata__title">
-                TESDA
-              </strong>
-              Director General | 2010 - October 2015
-            </dd>
-          </dl>
-        </div>
-      </div>
-    </aside>
     <div class="callout primary" data-closable>
       <div class="region-content">
         <h5>Do you know Joel Villanueva?</h5>

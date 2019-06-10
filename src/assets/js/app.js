@@ -15,3 +15,25 @@ require('foundation-sites');
 
 
 $(document).foundation();
+
+$('.article-metadata__vote-list-toggle').click(function(e){
+    e.preventDefault();
+    var $parent = $(this).parent();
+    var $root = $parent.parent();
+    var $children = $root.children('.article-metadata__votes-item--is-toggled');
+    $children.each(function(i, html){
+        $(this).removeClass('article-metadata__votes-item--is-toggled');
+    })
+    $parent.toggleClass('article-metadata__votes-item--is-toggled');
+})
+
+$('.js-toggler').click(function(e){
+    e.preventDefault();
+    var $parent = $(this).parent();
+    var $root = $parent.parent();
+    var $children = $root.children('.is-toggled');
+    $children.each(function(i, html){
+        $(this).removeClass('is-toggled');
+    })
+    $parent.toggleClass('is-toggled');
+})
