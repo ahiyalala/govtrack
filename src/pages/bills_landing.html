@@ -1,19 +1,32 @@
 <header>
-    {{> navigation }}
+  {{> navigation }}
 
-    <div class="featured-header">
-        <div class="feature-header__img-wrapper">
-            <img src="assets/img/construction.jpg" class="featured-header__image" />
-        </div>
-        <div class="featured-header__text-wrapper">
-            <div class="featured-header__text">
-                    <h1>SB1234 - Featured Bill</h1>
-                    <p>This is a short summary about the featured bill</p>
-                    <a href="/bill.html">Read more about this bill <i class="fa fa-arrow-right"></i></a>
-            </div>
-        </div>
+  <div class="featured-header">
+    <div class="feature-header__img-wrapper">
+      <img src="assets/img/construction.jpg" class="featured-header__image" />
     </div>
+    <div
+      class="featured-header__text-wrapper featured-header__text-wrapper--danger"
+    >
+      <div class="featured-header__text">
+        <span class="h6">Topic</span>
+        <h1>SB1234 - Featured Bill</h1>
+        <p>This is a short summary about the featured bill</p>
+        <a href="/bill.html"
+          >Read more about this bill <i class="fa fa-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+  </div>
 </header>
 <main>
-    
+  <section class="bills-container">
+    <ul class="bills-listing grid-x grid-padding-x grid-padding-y">
+      {{#each bills}}
+      {{> bill_card title=this.title number=this.number date=this.date author=this.author progress=this.progress progress_status=this.progress_status progress_text=this.progress_text}}
+      {{/each}}
+    </ul>
+  </section>
 </main>
+
+{{> footer}}

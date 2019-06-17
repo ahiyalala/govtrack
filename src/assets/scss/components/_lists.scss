@@ -65,31 +65,35 @@
   font-size: 0.75rem;
 }
 
-
-.vote-list{
+.vote-list {
   list-style-type: none;
-  margin:0 1rem;
+  margin: 0 1rem;
 }
 
-.vote-list__item{
-  margin-top:1rem;
+.vote-list__item {
+  margin-top: 1rem;
 }
 
-.vote-list__link{
-  color:$black;
+.vote-list__link {
+  color: $black;
   text-decoration: underline;
-  &:hover{
-    color:$black;
+  &:hover {
+    color: $black;
     text-decoration: none;
   }
 }
 
-.voted-list__item{
-  margin-top:0.5rem;
+.voted-list__item {
+  margin-top: 0.5rem;
 }
 
-.voted-list{
+.voted-list {
   list-style-type: none;
-  margin-top:0.5rem;
-  margin-left:0;
+  margin-top: 0.5rem;
+  margin-left: 0;
+}
+
+.bills-listing {
+  list-style-type: none;
+  margin: 0;
 }

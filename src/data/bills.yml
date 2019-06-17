@@ -1,0 +1,28 @@
+- number: 1024
+  title: "Flexible Working Hours Bill"
+  author: "Joel Villanueva"
+  date: "June 3, 2019"
+  progress: 100%
+  progress_status: "success"
+  progress_text: "Signed"
+- number: 1224
+  title: "Philippine Boxing Committee"
+  author: "Manny Pacquiao"
+  date: "June 3, 2017"
+  progress: 50%
+  progress_status: "alert"
+  progress_text: "Rejected"
+- number: 1367
+  title: "Department of Water"
+  author: "Bato dela Rosa"
+  date: "June 3, 2019"
+  progress: 25%
+  progress_status: "alert"
+  progress_text: "Rejected"
+- number: 1367
+  title: "Department of OFW"
+  author: "Bong Go"
+  date: "June 3, 2019"
+  progress: 25%
+  progress_status: "alert"
+  progress_text: "Rejected"

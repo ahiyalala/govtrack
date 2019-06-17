@@ -1,0 +1,59 @@
+.bills-container {
+  background: $light-gray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include breakpoint(large) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+section.bills-container {
+  margin-bottom: -4rem;
+}
+
+.bill-card {
+  padding: 2rem 1rem;
+  background: $white;
+}
+
+.bill-card__title {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: $black;
+  &:hover {
+    color: $black;
+    text-decoration: underline;
+  }
+}
+
+.bill-card__text {
+  margin-bottom: 1rem;
+}
+
+.bill-card__text small {
+  color: $black;
+}
+
+.bill-card__meta {
+  @include breakpoint(medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.bill-card__author,
+.bill-card__date {
+  color: $dark-gray;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  @include breakpoint(medium) {
+    font-size: 0.75rem;
+  }
+}
+
+.bill-card__author .fa,
+.bill-card__date .fa {
+  margin-right: 0.5rem;
+}
