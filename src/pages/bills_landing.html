@@ -21,11 +21,14 @@
 </header>
 <main>
   <section class="bills-container">
-    <ul class="bills-listing grid-x grid-padding-x grid-padding-y">
-      {{#each bills}}
-      {{> bill_card title=this.title number=this.number date=this.date author=this.author progress=this.progress progress_status=this.progress_status progress_text=this.progress_text}}
-      {{/each}}
-    </ul>
+    <div class="region-wide">
+        <h2>Listed Bills</h2>
+        <ul class="bills-listing grid-x grid-margin-x grid-padding-y">
+          {{#each bills}}
+          {{> bill_card title=this.title number=this.number date=this.date author=this.author progress=this.progress progress_status=this.progress_status progress_text=this.progress_text}}
+          {{/each}}
+        </ul>
+    </div>
   </section>
 </main>
 

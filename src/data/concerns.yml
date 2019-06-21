@@ -1,0 +1,4 @@
+- name: 'Education'
+  icon: 'fa-book'
+- name: 'Labor'
+  icon: 'fa-hard-hat'
