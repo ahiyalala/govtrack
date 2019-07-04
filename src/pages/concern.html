@@ -1,35 +1,39 @@
 <header class="header">
-        {{> navigation }}
-    
-        <div class="landing-banner landing-banner--blue region-fullbleed">
-          <div class="landing-banner__text">
-            <div class="region-content text-center">
-              <h1>
-                National Concerns
-              </h1>
-            </div>
-          </div>
-        </div>
-      </header>
-<main>
-    <div class="region-wide">
-            <ul class="focus-list">
-                {{#each concerns}}
-                {{> focus-list__item name=this.name icon=this.icon}}
-                {{/each}}
-            </ul>
+  {{> navigation }}
+
+  <div class="landing-banner landing-banner--blue region-fullbleed">
+    <div class="landing-banner__text">
+      <div class="region-content text-center">
+        <h1>
+          National Concerns
+        </h1>
+      </div>
     </div>
-    <section class="quick-statistics region-wide">
-        <h2>Quick Statistics</h2>
-        <div class="grid-x grid-margin-x">
-            <div class="cell small-12 medium-6">
-                <img src="assets/img/construction.jpg" alt="construction" />
-            </div>
-            <div class="cell small-12 medium-6">
-                <h3>Labor</h3>
-                <p>Of the estimated 71.9 million population 15 years and over in October 2019, approximately 43.5 million persions were in the labor force.</p>
-                <i>Philippine Statistics Authority</i>
-            </div>
-        </div>
-    </section>
+  </div>
+</header>
+<main>
+  <div class="region-wide">
+    <ul class="focus-list focus-list--full">
+      {{#each concerns}}
+      {{> focus-list__item name=this.name icon=this.icon}}
+      {{/each}}
+    </ul>
+  </div>
+  <section class="quick-statistics region-wide">
+    <h2>Quick Statistics</h2>
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 medium-6">
+        <img src="assets/img/construction.jpg" alt="construction" />
+      </div>
+      <div class="cell small-12 medium-6">
+        <small class="quick-statistics__subnav"><a href="#">Labor</a></small>
+        <h3>A decent employment rate</h3>
+        <p>
+          Of the estimated 71.9 million population 15 years and over in October
+          2019, approximately 43.5 million persions were in the labor force.
+        </p>
+        <i>Philippine Statistics Authority</i>
+      </div>
+    </div>
+  </section>
 </main>

@@ -15,7 +15,7 @@ section.bills-container {
 .bill-card {
   padding: 2rem 1rem;
   background: $white;
-  height:100%;
+  height: 100%;
 }
 
 .bill-card__title {
@@ -23,7 +23,9 @@ section.bills-container {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   color: $black;
-  height:calc(1.5rem * 1.4 * 2);
+  @include breakpoint(medium) {
+    height: calc(1.5rem * 1.4 * 2);
+  }
   &:hover {
     color: $black;
     text-decoration: underline;
@@ -58,4 +60,12 @@ section.bills-container {
 .bill-card__author .fa,
 .bill-card__date .fa {
   margin-right: 0.5rem;
+}
+
+.bill--border {
+  border: 0.5px solid $medium-gray;
+}
+
+.bill-card--mini .bill-card__text {
+  margin-bottom: 0;
 }

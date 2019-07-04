@@ -1,0 +1,8 @@
+.quick-statistics__subnav a {
+  color: $black;
+  font-weight: $global-weight-bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

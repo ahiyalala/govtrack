@@ -1,37 +1,34 @@
 <header class="header">
-    {{> navigation }}
+  {{> navigation }}
 
-    <div class="landing-banner landing-banner--blue region-fullbleed">
-      <div class="landing-banner__text">
-        <div class="region-content text-center">
-          <h1>
-            Senators
-          </h1>
-          <small class="h3">of the 18th Congress</small>
-        </div>
+  <div class="landing-banner landing-banner--blue region-fullbleed">
+    <div class="landing-banner__text">
+      <div class="region-content text-center">
+        <h1>
+          Senators
+        </h1>
+        <small class="h3">of the 18th Congress</small>
       </div>
     </div>
-  </header>
-  <main>
-    <div class="senators__container region-content">
-      <ul class="senators__list grid-x">
-        {{#each senators}}
-        <li class="small-12 medium-6 large-3">
-          <a href="#">
-            <div class="senators__profile text-center">
-              <div class="profile-icon profile-icon--large">
-                <img
-                  src="https://via.placeholder.com/150"
-                  alt="Sonny Angara"
-                />
-              </div>
-              <span class="senators__name">{{this}}</span>
+  </div>
+</header>
+<main>
+  <div class="senators__container region-content">
+    <ul class="senators__list grid-x">
+      {{#each senators}}
+      <li class="small-12 medium-6 large-3">
+        <a href="/senator.html">
+          <div class="senators__profile text-center">
+            <div class="profile-icon profile-icon--large">
+              <img src="https://via.placeholder.com/150" alt="{{this}}" />
             </div>
-          </a>
-        </li>
-        {{/each}}
-      </ul>
-    </div>
-  </main>
+            <span class="senators__name">{{this}}</span>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</main>
 
-  {{> footer}}
+{{> footer}}
