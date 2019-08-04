@@ -1,127 +1,130 @@
+{{> navigation }}
 <header class="header">
-    {{> navigation }}
-
-    <div class="article-banner region-fullbleed">
-      <img
-        src="/assets/img/office.jpg"
-        alt="stockphoto of image"
-        class="article-banner__image"
-      />
-      <div class="article-banner__text">
-        <div class="region-content">
-          <small class="h5">Senate Bill No. 1571</small>
-          <h1>
-            Flexible Working Hours Bill
-          </h1>
-        </div>
+  <div class="article-banner region-fullbleed">
+    <img
+      src="/assets/img/office.jpg"
+      alt="stockphoto of image"
+      class="article-banner__image"
+    />
+    <div class="article-banner__text">
+      <div class="region-content">
+        <small class="h5">Senate Bill No. 1571</small>
+        <h1>
+          Flexible Working Hours Bill
+        </h1>
       </div>
     </div>
-    <div class="region-content">
-      <strong>
-        AN ACT AMENDING ARTICLE 83 OF THE PRESIDENTIAL DECREE NO. 442
-        OTHERWISE KNOWN AS THE LABOR CODE OF THE PHILIPPINES, AS AMENDED
-      </strong>
-    </div>
-  </header>
-  <main>
-    <article class="region-text">
-      <aside>
-        <h2 class="h4">About this bill</h2>
-        <dl class="article-metadata">
-          <dt>Author/s</dt>
-          <dd>
-            <div class="profile-icon">
-              <img src="https://via.placeholder.com/150" alt="Sonny Angara" />
-            </div>
-            <span class="profile-name">Villanueva, Joel</span>
-          </dd>
-          <dt>Date filed</dt>
-          <dd><time datetime="2019-01-14">2019-01-14</time></dd>
-          <dt>Status</dt>
-          <dd>
-            <strong>Pending</strong> to discuss disagreeing provisions with
-            House of Representatives
-          </dd>
-          <dt>Third Reading Vote</dt>
-          <dd>
-            <ul class="article-metadata__votes">
-              <li class="article-metadata__votes-item">
-                <a href="#" class="article-metadata__vote-list-toggle">
-                  In Favor (17)
-                </a>
-                <ul class="voters-list">
-                  {{#each voters_list.in_favor}}
-                    <li class="voters-list__item">
-                      <a href="#">
-                        <img src="{{ this.image }}" title="{{this.name}}" alt="{{this.name}}" />
-                      </a>
-                    </li>
-                  {{/each}}
-                  <li class="voters-list__item voters-list__item--is-excess">
-                    <a href="#"><strong>+14</strong></a>
-                  </li>
-                </ul>
-              </li>
+  </div>
+  <div class="region-content">
+    <strong>
+      AN ACT AMENDING ARTICLE 83 OF THE PRESIDENTIAL DECREE NO. 442 OTHERWISE
+      KNOWN AS THE LABOR CODE OF THE PHILIPPINES, AS AMENDED
+    </strong>
+  </div>
+</header>
+<main>
+  <article class="region-text">
+    <aside>
+      <h2 class="h4">About this bill</h2>
+      <dl class="article-metadata">
+        <dt>Author/s</dt>
+        <dd>
+          <div class="profile-icon">
+            <img src="https://via.placeholder.com/150" alt="Sonny Angara" />
+          </div>
+          <span class="profile-name">Villanueva, Joel</span>
+        </dd>
+        <dt>Date filed</dt>
+        <dd><time datetime="2019-01-14">2019-01-14</time></dd>
+        <dt>Status</dt>
+        <dd>
+          <strong>Pending</strong> to discuss disagreeing provisions with House
+          of Representatives
+        </dd>
+        <dt>Third Reading Vote</dt>
+        <dd>
+          <ul class="article-metadata__votes">
+            <li class="article-metadata__votes-item">
+              <a href="#" class="article-metadata__vote-list-toggle">
+                In Favor (17)
+              </a>
+              <ul class="voters-list">
+                {{#each voters_list.in_favor}}
+                <li class="voters-list__item">
+                  <a href="#">
+                    <img
+                      src="{{ this.image }}"
+                      title="{{ this.name }}"
+                      alt="{{ this.name }}"
+                    />
+                  </a>
+                </li>
+                {{/each}}
+                <li class="voters-list__item voters-list__item--is-excess">
+                  <a href="#"><strong>+14</strong></a>
+                </li>
+              </ul>
+            </li>
 
-              <li class="article-metadata__votes-item">
-                <a href="#" class="article-metadata__vote-list-toggle">
-                  Against (0)
-                </a>
-              </li>
+            <li class="article-metadata__votes-item">
+              <a href="#" class="article-metadata__vote-list-toggle">
+                Against (0)
+              </a>
+            </li>
 
-              <li class="article-metadata__votes-item">
-                <a href="#" class="article-metadata__vote-list-toggle">
-                  Abstention (0)
-                </a>
-              </li>
-            </ul>
-          </dd>
-        </dl>
-      </aside>
-      <section>
-        <h2 class="h4">What does this bill do?</h2>
-        <p>
-          The bill aims to allow the employer and employee to agree on a
-          <strong>Voluntary Work Arrangement</strong> which allows the
-          employee to arrange a flexible work week given that the same amount
-          of hours per week is rendered.
-        </p>
-        <p>
-          Additionally, this bill also ensures the employee that he/she
-          <strong>
-            shall receive all existing benefits, including overtime pay,
-          </strong>
-          regardless of any work arrangement
-        </p>
-      </section>
-      <section>
-        <h2 class="h4">How does this affect me?</h2>
-        <p>
-          <strong>Directly - </strong>
-          As long as your employer agrees or there is a national emergency,
-          you can arrange a different work week schedule as oppose to the
-          usual work week you are accustomed to.
-        </p>
-      </section>
-      <div>
-        <ul class="tags">
-          <li class="tags__pill"><a href="#">Labor</a></li>
-          <li class="tags__pill"><a href="#">Tag 2</a></li>
-        </ul>
-        <h2 class="h4">Related news articles</h2>
-        <ul class="related-links">
-          <li class="related-links__link">
-            <a
-              href="https://www.rappler.com/nation/154592-joel-villanueva-dismissal-senate-rejects-ombudsman"
+            <li class="article-metadata__votes-item">
+              <a href="#" class="article-metadata__vote-list-toggle">
+                Abstention (0)
+              </a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </aside>
+    <section>
+      <h2 class="h4">What does this bill do?</h2>
+      <p>
+        The bill aims to allow the employer and employee to agree on a
+        <strong>Voluntary Work Arrangement</strong> which allows the employee to
+        arrange a flexible work week given that the same amount of hours per
+        week is rendered.
+      </p>
+      <p>
+        Additionally, this bill also ensures the employee that he/she
+        <strong>
+          shall receive all existing benefits, including overtime pay,
+        </strong>
+        regardless of any work arrangement
+      </p>
+    </section>
+    <section>
+      <h2 class="h4">How does this affect me?</h2>
+      <p>
+        <strong>Directly - </strong>
+        As long as your employer agrees or there is a national emergency, you
+        can arrange a different work week schedule as oppose to the usual work
+        week you are accustomed to.
+      </p>
+    </section>
+    <div>
+      <ul class="tags">
+        <li class="tags__pill"><a href="#">Labor</a></li>
+        <li class="tags__pill"><a href="#">Tag 2</a></li>
+      </ul>
+      <h2 class="h4">Related news articles</h2>
+      <ul class="related-links">
+        <li class="related-links__link">
+          <a
+            href="https://www.rappler.com/nation/154592-joel-villanueva-dismissal-senate-rejects-ombudsman"
+          >
+            <span class="related-links__title"
+              >It's final: Senate will not dismiss Joel Villanueva</span
             >
-              <span class="related-links__title"
-                >It's final: Senate will not dismiss Joel Villanueva</span
-              >
-              <small><i>Rappler</i></small>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </article>
-  </main>
-  {{> footer}}
+            <small><i>Rappler</i></small>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </article>
+</main>
+{{> footer}}

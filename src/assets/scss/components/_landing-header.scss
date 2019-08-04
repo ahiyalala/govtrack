@@ -1,12 +1,26 @@
 .landing-banner {
-  margin-top: 5rem;
-  height: 18rem;
+  margin-top: 3.5625rem;
+  height: 15rem;
   display: flex;
   justify-content: end;
+  position: relative;
+  @include breakpoint(medium) {
+    margin-top: 5rem;
+    height: 18rem;
+  }
 }
 
 .landing-banner--blue {
   background: $secondary;
+
+  h1,
+  small {
+    color: $white;
+  }
+}
+
+.landing-banner--blue-opaque {
+  background: rgba(0, 109, 170, 0.7);
 
   h1,
   small {
@@ -24,4 +38,16 @@
 .landing-banner__text * {
   color: $black;
   text-transform: uppercase;
+}
+
+.landing-banner--tall {
+  height: 15rem;
+  @include breakpoint(medium) {
+    height: 25rem;
+  }
+}
+
+.landing-banner__text--overlay {
+  position: absolute;
+  height: 100%;
 }
